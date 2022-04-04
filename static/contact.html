@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <script src="https://kit.fontawesome.com/8d1230bf7d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../assets/index.css">
+</head>
+<style>
+    .container {
+        border: 2px solid black;
+        text-align: center;
+        display: grid;
+        grid-template-columns: 30% 30% 40%;
+        grid-template-rows: 40px 40px;
+        grid-template-areas: "item1 item2 item3"
+                             "item4 item5 item6"
+                             "item7 item8 item9";
+        grid-gap: 0px;
+    }
+
+    .item1 {
+        grid-area: item1;
+        font-size: 20px;
+        font-weight: 900;
+    }
+
+    .item2 {
+        grid-area: item2;
+        font-size: 20px;
+        font-weight: 900;
+    }
+
+    .item3 {
+        grid-area: item3;
+        font-size: 20px;
+        font-weight: 900;
+    }
+
+    .item4 {
+        grid-area: item4;
+        font-size: 18px;
+    }
+
+    .item5 {
+        grid-area: item5;
+        font-size: 18px;
+    }
+
+    .item6 {
+        grid-area: item6;
+        font-size: 18px;
+    }
+
+    .item7 {
+        grid-area: item7;
+        font-size: 18px;
+    }
+
+    .item8 {
+        grid-area: item8;
+        font-size: 18px;
+    }
+
+    .item9 {
+        grid-area: item9;
+        font-size: 18px;
+    }
+</style>
+
+<body>
+    <nav class="flex bg-purple-600 text-white p-2 flex-col justify-around">
+        <div class="flex justify-around  items-center w-72 lg:w-full text-2xl">
+            <div class="font-extrabold"><a href="/index.html">Class VII C</a></div>
+            <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+        </div>
+        <div class="pt-2 hidden" style="display: none;" id="show">
+            <hr>
+            <ul class="pl-32 lg:p-0 lg:text-center text-xl">
+                <li class="py-2"><a href="/index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li class="py-2"><a href="/static/dairy.html"><i class="fa-solid fa-book"></i> Dairy</a></li>
+                <li class="py-2"><a href="/static/tt.html"><i class="fa-solid fa-clock"></i> Time Table</a></li>
+                <li class="py-2"><a href="/static/about.html"><i class="fa-solid fa-address-card"></i> About</a></li>
+                <li class="py-2"><a href="/static/contact.html"><i class="fa-solid fa-phone"></i> Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <center>
+        <div class="container">
+            <div class="item1">Profession</div>
+            <div class="item2">Name</div>
+            <div class="item3">Phone</div>
+            <div class="item4">Incharge & Sci Teacher</div>
+            <div class="item5">Mrs. Harsimran</div>
+            <div class="item6">+91 78887 47629</div>
+            <div class="item7">Creator</div>
+            <div class="item8">Prabaljot</div>
+            <div class="item9">+91 9478010000</div>
+        </div>
+    </center>
+    <script>
+        function toggleMenu() {
+            let para = document.getElementById('show');
+            if (para.style.display != 'none') {
+                para.style.display = 'none';
+            }
+            else {
+                para.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+
+</html>
