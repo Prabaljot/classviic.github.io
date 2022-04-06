@@ -305,6 +305,15 @@ video {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
+
+.link{
+  text-decoration: underline;
+}
+
+.m-2{
+  margin: 0.5rem;
+}
+
 @media (min-width: 1024px) {
   .lg\:w-full {
     width: 100%;

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dairy</title>
+    <script src="https://kit.fontawesome.com/8d1230bf7d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <nav class="flex bg-purple-600 text-white p-2 flex-col justify-around">
+        <div class="flex justify-around  items-center w-72 lg:w-full text-2xl">
+            <div class="font-extrabold"><a href="/index.html">Class VII C</a></div>
+            <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+        </div>
+        <div class="pt-2 hidden" style="display: none;" id="show">
+            <hr>
+            <ul class="pl-32 lg:p-0 lg:text-center text-xl">
+                <li class="py-2"><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li class="py-2"><a href="dairy.html"><i class="fa-solid fa-book"></i> Dairy</a></li>
+                <li class="py-2"><a href="tt.html"><i class="fa-solid fa-clock"></i> Time Table</a></li>
+                <li class="py-2"><a href="about.html"><i class="fa-solid fa-address-card"></i> About</a></li>
+                <li class="py-2"><a href="contact.html"><i class="fa-solid fa-phone"></i> Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main class="">
+        <h1 class="text-4xl">No English Works Yet</h1><br><br>
+        <p class="text-2xl"><b>Note:</b> No written work done in class as we are reading chapter 1 of Honeycomb till date.</p>
+    </main>
+    <script>
+        function toggleMenu() {
+            let para = document.getElementById('show');
+            if (para.style.display != 'none') {
+                para.style.display = 'none';
+            }
+            else {
+                para.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
