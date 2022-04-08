@@ -315,12 +315,32 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.link{
+/* .link{
   text-decoration: underline;
-}
+} */
 
 .m-2{
   margin: 0.5rem;
+}
+
+.subject-box{
+  width: 96%;
+  background: #029;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.subject-box li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(#6275d3, #029);
+  margin: 10px 0px;
+  width: 50vw;
+  height: 20vh;
+  color: #fff;
 }
 
 @media (min-width: 1024px) {
